@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import 'bootstrap/dist/css/bootstrap.css'
+
 import Vuex from 'vuex'
-const store = new Vuex.Store()
+const store = new Vuex.Store(todo)
+import todo from './store'
 createApp(App).use(store).mount('#app')
